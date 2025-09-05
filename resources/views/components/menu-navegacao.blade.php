@@ -9,7 +9,7 @@
       <h1 class="sitename">Roberto Cabral</h1>
     </a>
 
-    <x-redes-sociais />
+    <x-redes-sociais :links="$linksRedes" />
 
     <nav id="navmenu" class="navmenu">
     <ul>

@@ -1,0 +1,1 @@
+<a href="{{ $url }}" class="{{ $rede }}" target="_blank" rel="noopener noreferrer"><i class="bi {{ $icone }}"></i></a>

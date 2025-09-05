@@ -6,16 +6,17 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class GaleriaPortfolio extends Component
+class SocialLink extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public array $cards
-    )
-    {
-        //
+        public string $url,
+        public string $rede,
+        public string $icone
+    ) {
+    //
     }
 
     /**
@@ -23,6 +24,6 @@ class GaleriaPortfolio extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.galeria-portfolio');
+        return view('components.social-link');
     }
 }

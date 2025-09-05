@@ -6,14 +6,12 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class GaleriaPortfolio extends Component
+class Portfolio-item-card extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct(
-        public array $cards
-    )
+    public function __construct()
     {
         //
     }
@@ -23,6 +21,6 @@ class GaleriaPortfolio extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.galeria-portfolio');
+        return view('components.portfolio-item-card');
     }
 }
